@@ -1,0 +1,120 @@
+@import "../../assets/styles/variables";
+
+.news {
+    margin-top: 50px;
+}
+
+.search {
+    .searchLineContainer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .searchInput {
+            width: 100%;
+            padding: 20px;
+            background-color: $secondary-color;
+            border-radius: 6px;
+            border: none;
+
+            &::placeholder {
+                color: #000;
+            }
+        }
+
+        .btn {
+            @include mainButton;
+            height: 5.8vh;
+        }
+
+        // svg {
+        //     width: 40px;
+        //     height: 40px;
+        // }
+    }
+
+    .dates {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+
+        .dateFilter {
+            select {
+                padding: 10px;
+                height: 100%;
+                color: $third-color;
+                background-color: $main-color;
+                border: none;
+                border-radius: 12px;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    background-color: $fourth-color;
+                }
+            }
+        }
+
+        .dateFilterContainer {
+            display: flex;
+            gap: 15px;
+        }
+
+        .filterOptions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .datesContainer {
+            display: flex;
+            gap: 25px;
+            border: none;
+
+            label {
+                color: $main-color;
+            }
+
+            fieldset {
+                border-color: $main-color !important;
+            }
+        }
+
+        .btn {
+            @include mainButton;
+            height: 5.8vh;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $fourth-color;
+            }
+        }
+    }
+}
+
+.content {
+    margin-top: 25px;
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        margin-top: 30px;
+    }
+}
+
+.lists {
+    display: flex;
+    gap: 10px;
+    li {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+    }
+}

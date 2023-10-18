@@ -1,0 +1,58 @@
+@import "../../assets/styles/variables";
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $pc-global-padding;
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @include mainButton;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $fourth-color;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        gap: 15px;
+
+        .link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $main-color;
+            font-weight: 600;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $fourth-color;
+            }
+        }
+
+        .active {
+            color: $fourth-color;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: $nav-padding * 2.5;
+        border-bottom: 2px solid $fourth-color;
+    }
+}

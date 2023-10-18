@@ -1,0 +1,55 @@
+@import "../../../assets/styles/variables";
+
+.section {
+    padding: 0;
+}
+
+.swiperContainer {
+    margin-top: 50px;
+    width: 100%;
+    height: fit-content;
+}
+
+.right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+    img {
+        width: 20%;
+    }
+
+    .rightContent {
+        @include container;
+        width: 30%;
+
+        .text {
+            @include blockText;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.enoughContainer {
+    .enough {
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 30px;
+        width: 85%;
+        background-color: $main-color;
+        border-radius: 8px;
+        box-shadow: 0 0 4px 4px $main-color;
+
+        .enoughHeader {
+            @include mainCaption;
+            color: $third-color;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+    }
+}

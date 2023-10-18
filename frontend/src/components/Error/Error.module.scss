@@ -1,0 +1,22 @@
+@import "../../assets/styles/variables";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+    height: 50vh;
+
+    .bigText {
+        @include mainHeader;
+    }
+
+    .text {
+        @include mainCaption;
+        margin-top: 20px;
+    }
+
+    .smallText {
+    }
+}
