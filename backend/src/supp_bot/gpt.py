@@ -26,6 +26,6 @@ class GPT():
             return 'Возникла ошибка!'
         
         
-if __name__ == '__main__':   
-    gpt = GPT()
-    asyncio.run(gpt.chat_complete('Столица мира'))
+# if __name__ == '__main__':   
+#     gpt = GPT()
+#     asyncio.run(gpt.chat_complete('Столица мира'))

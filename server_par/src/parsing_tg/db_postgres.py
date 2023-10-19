@@ -4,8 +4,6 @@ from .models import news_data
 import datetime
 
 
-
-
 class PG_DB:
 
     def __init__(self, coonection):

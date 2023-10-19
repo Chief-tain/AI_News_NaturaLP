@@ -4,4 +4,4 @@ TEMPERATURE = 0.7
 STOP = None
 N_AMOUNT = 1
 TIMEOUT = 125
-API_KEY = '...'
+API_KEY = '...' # Your OpenAI-API key
